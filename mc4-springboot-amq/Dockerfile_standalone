@@ -1,0 +1,7 @@
+FROM store/oracle/serverjre:8
+
+WORKDIR /app
+
+ADD target/mc4-springboot-amq-0.0.1.jar /app/mc4-springboot-amq-0.0.1.jar
+
+ENTRYPOINT ["java","-jar","/app/mc4-springboot-amq-0.0.1.jar"]                                                             
